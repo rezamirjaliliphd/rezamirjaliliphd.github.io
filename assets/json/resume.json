@@ -5,8 +5,8 @@
     "image": "",
     "email": "reza.mirjalili@gmail.com",
     "phone": "(631) 560-3424",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "url": "RezaMirjaliliPhD.github.io",
+    "summary": "Ph.D. candidate in Industrial Engineering at the University of Houston, specializing in large-scale combinatorial optimization, logistics, and operations research. With a strong foundation in both deterministic and stochastic modeling, I develop exact algorithms—such as branch-and-price-and-cut frameworks—for solving complex last-mile delivery problems, particularly those involving mothership-based drone routing networks (MDRN). My research integrates techniques from mathematical optimization, C++, Python, and Cython programming, leveraging solvers like Gurobi and CPLEX, as well as machine learning methods including graph neural networks and reinforcement learning to accelerate column generation and cut separation. Experienced in end-to-end algorithm design, I focus on scalable, high-performance solutions that bridge theory and real-world application in logistics and transportation systems.",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
@@ -16,20 +16,20 @@
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "Linkedin",
+        "username": "rezamirjalili",
+        "url": "https://www.linkedin.com/in/rezamirjalili/"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
+      "name": "Systems Optimization and Computing Laboratory, Industrial and Systems Engineering, University of Hosuton",
+      "position": "Research Assistant",
+      "url": "https://www.ie.uh.edu/research/centers-labs/socl",
+      "startDate": "08-27-2020",
+      "endDate": "09-01-2026",
+      "summary": "",
       "highlights": ["Relativity"]
     }
   ],
