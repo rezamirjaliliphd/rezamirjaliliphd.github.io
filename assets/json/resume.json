@@ -6,7 +6,7 @@
     "email": "reza.mirjalili@gmail.com",
     "phone": "(631) 560-3424",
     "url": "RezaMirjaliliPhD.github.io",
-    "summary": "Ph.D. candidate in Industrial Engineering at the University of Houston, specializing in large-scale combinatorial optimization, logistics, and operations research. With a strong foundation in both deterministic and stochastic modeling, I develop exact algorithms—such as branch-and-price-and-cut frameworks—for solving complex last-mile delivery problems, particularly those involving mothership-based drone routing networks (MDRN). My research integrates techniques from mathematical optimization, C++, Python, and Cython programming, leveraging solvers like Gurobi and CPLEX, as well as machine learning methods including graph neural networks and reinforcement learning to accelerate column generation and cut separation. Experienced in end-to-end algorithm design, I focus on scalable, high-performance solutions that bridge theory and real-world application in logistics and transportation systems.",
+    "summary": "Ph.D. candidate in Industrial Engineering specializing in supply chain, network design, and last-mile delivery. Expert in branch-and-price-and-cut, scalable optimization, and algorithm design for real-world logistics challenges.",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
