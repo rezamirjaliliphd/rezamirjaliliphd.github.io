@@ -17,8 +17,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: false # includes a list of news items
-  scrollable: false # adds a vertical scroll bar if there are more than 3 news items
+  enabled: true # includes a list of news items
+  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
@@ -28,7 +28,7 @@ latest_posts:
 ---
 ---
 
-I am a Ph.D. candidate at the University of Houston working in <a href='https://www.ie.uh.edu/research/centers-labs/socl'> System Optimization and Computing Laboratroy (SOCL) </a>, specializing in operations research, combinatorial optimization, and machine learning for logistics systems. My research focuses on developing exact and intelligent algorithms to solve large-scale network design and routing problems with a particular emphasis on drone-assisted delivery systems.
+I am a Ph.D. candidate at the University of Houston working in <a href='https://www.ie.uh.edu/research/centers-labs/socl'> System Optimization and Computing Laboratroy (SOCL) </a> under supervison of <a href='https://www.ie.uh.edu/faculty/lim'> Prof. Gino J. Lim </a>, specializing in operations research, combinatorial optimization, and machine learning for logistics systems. My research focuses on developing exact and intelligent algorithms to solve large-scale network design and routing problems with a particular emphasis on drone-assisted delivery systems.
 I have experience designing branch-and-price-and-cut frameworks, integrating reinforcement learning with optimization, and accelerating shortest path subroutines under complex constraints. My work spans both theoretical modeling and computational implementations in Rust, C, C++, Python, and Cython.
 
 ---
