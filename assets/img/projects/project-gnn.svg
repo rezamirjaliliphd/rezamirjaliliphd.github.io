@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0b1220"/><stop offset="100%" stop-color="#132033"/></linearGradient>
+<radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.20"/><stop offset="100%" stop-color="#2dd4bf" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1200" height="750" fill="url(#bg)"/>
+<circle cx="816.0000000000001" cy="225.0" r="465.0" fill="url(#glow)"/>
+<line x1="250.0" y1="190.0" x2="600.0" y2="160.0" stroke="#2dd4bf" stroke-width="2" opacity="0.28" stroke-linecap="round"/>
+<line x1="250.0" y1="190.0" x2="600.0" y2="440.0" stroke="#2dd4bf" stroke-width="2" opacity="0.28" stroke-linecap="round"/>
+<line x1="250.0" y1="190.0" x2="600.0" y2="700.0" stroke="#2dd4bf" stroke-width="2" opacity="0.28" stroke-linecap="round"/>
+<line x1="250.0" y1="330.0" x2="600.0" y2="300.0" stroke="#2dd4bf" stroke-width="2" opacity="0.28" stroke-linecap="round"/>
+<line x1="250.0" y1="330.0" x2="600.0" y2="580.0" stroke="#2dd4bf" stroke-width="2" opacity="0.28" stroke-linecap="round"/>
+<line x1="250.0" y1="470.0" x2="600.0" y2="160.0" stroke="#2dd4bf" stroke-width="2" opacity="0.28" stroke-linecap="round"/>
+<line x1="250.0" y1="470.0" x2="600.0" y2="440.0" stroke="#2dd4bf" stroke-width="2" opacity="0.28" stroke-linecap="round"/>
+<line x1="250.0" y1="470.0" x2="600.0" y2="700.0" stroke="#2dd4bf" stroke-width="2" opacity="0.28" stroke-linecap="round"/>
+<line x1="250.0" y1="610.0" x2="600.0" y2="300.0" stroke="#2dd4bf" stroke-width="2" opacity="0.28" stroke-linecap="round"/>
+<line x1="250.0" y1="610.0" x2="600.0" y2="580.0" stroke="#2dd4bf" stroke-width="2" opacity="0.28" stroke-linecap="round"/>
+<line x1="600.0" y1="160.0" x2="950.0" y2="250.0" stroke="#2dd4bf" stroke-width="2" opacity="0.28" stroke-linecap="round"/>
+<line x1="600.0" y1="160.0" x2="950.0" y2="550.0" stroke="#2dd4bf" stroke-width="2" opacity="0.28" stroke-linecap="round"/>
+<line x1="600.0" y1="300.0" x2="950.0" y2="400.0" stroke="#2dd4bf" stroke-width="2" opacity="0.28" stroke-linecap="round"/>
+<line x1="600.0" y1="440.0" x2="950.0" y2="250.0" stroke="#2dd4bf" stroke-width="2" opacity="0.28" stroke-linecap="round"/>
+<line x1="600.0" y1="440.0" x2="950.0" y2="550.0" stroke="#2dd4bf" stroke-width="2" opacity="0.28" stroke-linecap="round"/>
+<line x1="600.0" y1="580.0" x2="950.0" y2="400.0" stroke="#2dd4bf" stroke-width="2" opacity="0.28" stroke-linecap="round"/>
+<line x1="600.0" y1="700.0" x2="950.0" y2="250.0" stroke="#2dd4bf" stroke-width="2" opacity="0.28" stroke-linecap="round"/>
+<line x1="600.0" y1="700.0" x2="950.0" y2="550.0" stroke="#2dd4bf" stroke-width="2" opacity="0.28" stroke-linecap="round"/>
+<circle cx="250.0" cy="190.0" r="18" fill="#fbbf24" opacity="0.22"/>
+<circle cx="250.0" cy="190.0" r="11" fill="#fbbf24" opacity="1.0"/>
+<circle cx="250.0" cy="330.0" r="18" fill="#fbbf24" opacity="0.22"/>
+<circle cx="250.0" cy="330.0" r="11" fill="#fbbf24" opacity="1.0"/>
+<circle cx="250.0" cy="470.0" r="18" fill="#fbbf24" opacity="0.22"/>
+<circle cx="250.0" cy="470.0" r="11" fill="#fbbf24" opacity="1.0"/>
+<circle cx="250.0" cy="610.0" r="18" fill="#fbbf24" opacity="0.22"/>
+<circle cx="250.0" cy="610.0" r="11" fill="#fbbf24" opacity="1.0"/>
+<circle cx="600.0" cy="160.0" r="18" fill="#2dd4bf" opacity="0.22"/>
+<circle cx="600.0" cy="160.0" r="11" fill="#2dd4bf" opacity="1.0"/>
+<circle cx="600.0" cy="300.0" r="18" fill="#2dd4bf" opacity="0.22"/>
+<circle cx="600.0" cy="300.0" r="11" fill="#2dd4bf" opacity="1.0"/>
+<circle cx="600.0" cy="440.0" r="18" fill="#2dd4bf" opacity="0.22"/>
+<circle cx="600.0" cy="440.0" r="11" fill="#2dd4bf" opacity="1.0"/>
+<circle cx="600.0" cy="580.0" r="18" fill="#2dd4bf" opacity="0.22"/>
+<circle cx="600.0" cy="580.0" r="11" fill="#2dd4bf" opacity="1.0"/>
+<circle cx="600.0" cy="700.0" r="18" fill="#2dd4bf" opacity="0.22"/>
+<circle cx="600.0" cy="700.0" r="11" fill="#2dd4bf" opacity="1.0"/>
+<circle cx="950.0" cy="250.0" r="18" fill="#2dd4bf" opacity="0.22"/>
+<circle cx="950.0" cy="250.0" r="11" fill="#2dd4bf" opacity="1.0"/>
+<circle cx="950.0" cy="400.0" r="18" fill="#2dd4bf" opacity="0.22"/>
+<circle cx="950.0" cy="400.0" r="11" fill="#2dd4bf" opacity="1.0"/>
+<circle cx="950.0" cy="550.0" r="18" fill="#2dd4bf" opacity="0.22"/>
+<circle cx="950.0" cy="550.0" r="11" fill="#2dd4bf" opacity="1.0"/>
+<circle cx="600" cy="160" r="26" fill="none" stroke="#fbbf24" stroke-width="2.6" opacity="0.8"/>
+<circle cx="600" cy="300" r="26" fill="none" stroke="#fbbf24" stroke-width="2.6" opacity="0.8"/>
+</svg>
