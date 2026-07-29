@@ -1,14 +1,14 @@
+# GitHub profile card shown at the top of the repositories page.
 github_users:
-  - torvalds
-  - alshedivat
+  - rezamirjaliliphd
 
-repo_description_lines_max: 2
+repo_description_lines_max: 3
 
+# Public, non-research repositories only.
+# Dissertation code (ESPPRC pricing, CG-cut generation) is deliberately excluded.
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - rezamirjaliliphd/lstm-stock-prediction
+  - rezamirjaliliphd/cnn-optuna-cifar10
+  - rezamirjaliliphd/t5-translation-opus
+  - rezamirjaliliphd/Q_learning_shortest_path
+  - rezamirjaliliphd/rezamirjaliliphd.github.io

@@ -2,96 +2,152 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: Reza Mirjalili
+    - name: Focus
+      value: Operations Research, Combinatorial Optimization, Machine Learning
+    - name: Location
+      value: Houston, Texas, United States
+    - name: Email
+      value: reza.mirjalili@gmail.com
+
+- title: Summary
+  type: list
+  contents:
+    - Operations Research Scientist with 5+ years of experience in optimization and AI-driven decision-making.
+      Skilled in developing scalable exact algorithms and leveraging reinforcement learning for logistics,
+      supply chain, and routing problems. Proficient in mixed-integer programming, column generation, and
+      GPU-accelerated deep learning.
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Ph.D., Industrial Engineering
+      institution: University of Houston, Houston, TX
+      year: 2020 - 2025
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - GPA 3.75 / 4.00
+        - Systems Optimization and Computing Laboratory (SOCL), advised by Prof. Gino J. Lim.
+        - Dissertation work on exact and learning-augmented algorithms for mothership-and-drone routing.
+    - title: M.S., Civil Engineering
+      institution: SUNY Stony Brook University, Stony Brook, NY
+      year: 2018 - 2020
       description:
-        - Description 1.
-        - Description 2.
+        - GPA 3.80 / 4.00
+        - Transportation and Logistics Lab.
+    - title: M.S., Industrial Engineering
+      institution: Sharif University of Technology, Tehran, Iran
+      year: 2013 - 2016
+      description:
+        - GPA 3.40 / 4.00
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Research Assistant
+      institution: Systems Optimization and Computing Laboratory (SOCL), University of Houston
+      year: 2020 - 2025
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Developed a branch-and-price-and-cut algorithm for the Mothership Drone Routing Problem, introducing
+          valid inequalities that improved LP bounds by 5-10%.
+        - Proposed a bound-inference strategy that reduced pricing model calls and improved convergence by 18-50%.
+        - Applied deep reinforcement learning to prioritize pricing subproblems in column generation,
+          accelerating convergence by 20-30%.
+        - Built a high-performance bidirectional label-setting algorithm using NumPy and Cython.
+        - Designed a CG-cut heuristic using Deep Q-Learning and TD learning, reducing cut generation time by ~25%.
+        - Introduced a novel hybrid inequality combining cover, Chvátal-Gomory, and conflict cuts, closing 8% more
+          of the optimality gap.
+    - title: Research Assistant
+      institution: Transportation and Logistics Lab, SUNY Stony Brook
+      year: 2018 - 2020
       description:
-        - Description 1.
-        - Description 2.
+        - Formulated a stochastic branch-and-price model for home healthcare scheduling.
+        - Developed resiliency indices and time forecasts for the NYC transportation network under snow hazards.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Selected Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: <a href="https://github.com/rezamirjaliliphd/lstm-stock-prediction">Stock Price Forecasting with LSTM</a>
+      year: 2024
+      description:
+        - Achieved 96% directional accuracy and RMSE below 2.5 on Apple stock predictions using 8 years of data.
+        - Reduced forecast error by 35% versus a moving-average baseline.
+    - title: <a href="https://github.com/rezamirjaliliphd/cnn-optuna-cifar10">Image Classification and Hyperparameter Tuning</a>
+      year: 2024
+      description:
+        - Reached 80%+ CIFAR-10 accuracy using Optuna-based CNN tuning.
+        - Built a custom GPU-enabled training pipeline with PyTorch.
+    - title: <a href="https://github.com/rezamirjaliliphd/t5-translation-opus">English-to-French Translation with T5</a>
+      year: 2024
+      description:
+        - Improved BLEU score by 61% on the OPUS Books dataset; reduced validation loss from 2.14 to 1.47.
+        - Used FP16 training, prompt tokenization, and optimizer tuning with the HuggingFace Trainer.
+    - title: Finding Chvátal-Gomory Cuts via Deep Reinforcement Learning
+      year: 2023
+      description:
+        - Used Deep Q-Learning and TD learning to predict CG multipliers, achieving ~25% faster cut generation.
+    - title: Lip-Based Biometric Authentication Robust to Emotions
+      year: 2023
+      description:
+        - Designed a triplet Siamese network for robust authentication; audio input improved training by 20%.
+    - title: Crypto Default Prediction
+      year: 2022
+      description:
+        - Built logistic regression and tree-based models reaching 92% and 83% accuracy respectively.
+    - title: Drunk Driving Detection Using Deep Neural Networks
+      year: 2020
+      description:
+        - Developed an age-range classification pipeline reaching up to 94% accuracy in some groups.
 
-- title: Honors and Awards
+- title: Technical Skills
+  type: nested_list
+  contents:
+    - title: Optimization
+      items:
+        - Gurobi, CPLEX, SCIP, Pyomo
+        - Column generation, branch-and-price, branch-and-price-and-cut
+        - Cutting planes, Lagrangian relaxation, ESPPRC labeling algorithms
+    - title: AI and Machine Learning
+      items:
+        - PyTorch, TensorFlow, CUDA
+        - Deep reinforcement learning, graph neural networks
+    - title: Programming
+      items:
+        - Python, C, C++, Rust, Cython, MATLAB, Bash
+    - title: Parallelization
+      items:
+        - OpenMP, MPI, CUDA, Cython nogil / threading
+    - title: Tools
+      items:
+        - Git, LaTeX, Linux, Jupyter, VS Code
+
+- title: Certifications
   type: time_table
   contents:
-    - year: 1921
+    - year: 2025
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - MLOps Specialization, Duke University
+        - LLMOps Specialization, Duke University
+    - year: 2024
       items:
-        - Max Planck Medal
+        - Deep Learning Fundamentals, NVIDIA
+        - CUDA C/C++ Programming, NVIDIA
+    - year: 2023
+      items:
+        - Neural Networks, deeplearning.ai
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Exact methods for large-scale routing
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Branch-and-price-and-cut for path-based formulations.
+        - Elementary shortest path problems with resource constraints and bidirectional labeling.
+        - Cutting plane families, including Chvátal-Gomory, cover, conflict, and hybrid inequalities.
+    - title: Learning-augmented optimization
       items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+        - Reinforcement learning for pricing, branching, and cut selection.
+        - Graph neural networks for subproblem prioritization in column generation.
+    - title: Applications
+      items:
+        - Drone-assisted and multi-echelon delivery networks.
+        - Transportation network resilience and recovery forecasting.

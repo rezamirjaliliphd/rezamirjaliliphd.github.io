@@ -1,0 +1,469 @@
+/*******************************************************************************
+ * Site-specific overrides, loaded last so it wins on equal specificity.
+ *
+ * Two things happen here:
+ *   1. the theme palette is retuned (teal primary, amber accent, warm paper in
+ *      light mode, and a dark mode whose background matches the hero animation);
+ *   2. the components used by the landing page are defined.
+ ******************************************************************************/
+
+// -----------------------------------------------------------------------------
+// Palette
+// -----------------------------------------------------------------------------
+
+:root {
+  --rm-teal: #0f766e;
+  --rm-teal-bright: #0d9488;
+  --rm-amber: #b45309;
+  --rm-ink: #16202c;
+  --rm-muted: #5b6b7c;
+
+  --global-bg-color: #fbfbfa;
+  --global-card-bg-color: #ffffff;
+  --global-text-color: var(--rm-ink);
+  --global-text-color-light: var(--rm-muted);
+  --global-theme-color: var(--rm-teal);
+  --global-hover-color: var(--rm-teal-bright);
+  --global-hover-text-color: #ffffff;
+  --global-highlight-color: var(--rm-amber);
+  --global-divider-color: rgba(15, 23, 42, 0.1);
+  --global-code-bg-color: rgba(15, 118, 110, 0.06);
+
+  --global-footer-bg-color: #0b1220;
+  --global-footer-text-color: #94a3b8;
+  --global-footer-link-color: #f1f5f9;
+
+  --global-newsletter-bg-color: #ffffff;
+  --global-newsletter-text-color: var(--rm-ink);
+
+  --rm-surface: rgba(15, 118, 110, 0.04);
+  --rm-surface-border: rgba(15, 118, 110, 0.16);
+  --rm-shadow: 0 1px 2px rgba(15, 23, 42, 0.04), 0 8px 24px rgba(15, 23, 42, 0.06);
+  --rm-shadow-lift: 0 2px 4px rgba(15, 23, 42, 0.06), 0 16px 40px rgba(15, 23, 42, 0.12);
+}
+
+html[data-theme="dark"] {
+  --rm-teal: #2dd4bf;
+  --rm-teal-bright: #5eead4;
+  --rm-amber: #fbbf24;
+  --rm-ink: #e7eef6;
+  --rm-muted: #94a3b8;
+
+  // Matches the Manim hero animation's background, so the video sits flush.
+  --global-bg-color: #0b1220;
+  --global-card-bg-color: #131f31;
+  --global-text-color: var(--rm-ink);
+  --global-text-color-light: var(--rm-muted);
+  --global-theme-color: var(--rm-teal);
+  --global-hover-color: var(--rm-teal-bright);
+  --global-hover-text-color: #061019;
+  --global-highlight-color: var(--rm-amber);
+  --global-divider-color: rgba(148, 163, 184, 0.18);
+  --global-code-bg-color: rgba(45, 212, 191, 0.08);
+
+  --global-footer-bg-color: #060d17;
+  --global-footer-text-color: #8296ad;
+  --global-footer-link-color: #e2e8f0;
+
+  --global-newsletter-bg-color: #131f31;
+  --global-newsletter-text-color: var(--rm-ink);
+
+  --rm-surface: rgba(45, 212, 191, 0.06);
+  --rm-surface-border: rgba(45, 212, 191, 0.18);
+  --rm-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.35);
+  --rm-shadow-lift: 0 2px 4px rgba(0, 0, 0, 0.5), 0 16px 40px rgba(0, 0, 0, 0.5);
+}
+
+// -----------------------------------------------------------------------------
+// Typography
+// -----------------------------------------------------------------------------
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  line-height: 1.65;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.post-title,
+.card-title {
+  font-family: "Newsreader", Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  line-height: 1.22;
+}
+
+code,
+pre,
+kbd,
+.highlight {
+  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  font-size: 0.88em;
+}
+
+.post-header .post-title {
+  font-size: 2.9rem;
+  margin-bottom: 0.35rem;
+}
+
+.post-header .desc {
+  color: var(--global-text-color-light);
+  font-size: 1.05rem;
+  line-height: 1.55;
+
+  p {
+    margin: 0.25rem 0 0;
+    color: inherit;
+  }
+}
+
+// Section rules read better as hairlines than as full-strength borders.
+hr {
+  border: 0;
+  border-top: 1px solid var(--global-divider-color);
+  margin: 2.6rem 0;
+}
+
+a {
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+
+// -----------------------------------------------------------------------------
+// Navigation & chrome
+// -----------------------------------------------------------------------------
+
+.navbar {
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  background-color: color-mix(in srgb, var(--global-bg-color) 82%, transparent);
+  border-bottom: 1px solid var(--global-divider-color);
+  box-shadow: none;
+}
+
+.navbar .nav-item .nav-link {
+  font-size: 0.95rem;
+  letter-spacing: 0.005em;
+}
+
+footer.fixed-bottom,
+footer.sticky-bottom {
+  border-top: 1px solid var(--global-divider-color);
+}
+
+// -----------------------------------------------------------------------------
+// Profile
+// -----------------------------------------------------------------------------
+
+.profile {
+  img {
+    border-radius: 14px;
+    box-shadow: var(--rm-shadow);
+  }
+
+  // The theme sets this block in monospace with inline-block paragraphs, which
+  // runs the lines together. Restore normal prose flow.
+  .more-info {
+    margin-top: 0.9rem;
+    font-family: inherit;
+    font-size: 0.86rem;
+    line-height: 1.7;
+    color: var(--global-text-color-light);
+    border-left: 2px solid var(--rm-surface-border);
+    padding-left: 0.85rem;
+
+    p {
+      display: block;
+      margin: 0;
+      color: inherit;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Hero video
+// -----------------------------------------------------------------------------
+
+.hero-figure {
+  margin: 2.2rem 0 1.2rem;
+}
+
+.hero-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  border: 1px solid var(--global-divider-color);
+  box-shadow: var(--rm-shadow);
+  background: #0b1220;
+}
+
+.hero-caption {
+  margin-top: 0.7rem;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--global-text-color-light);
+  text-align: center;
+}
+
+// -----------------------------------------------------------------------------
+// Research pillars
+// -----------------------------------------------------------------------------
+
+// minmax(300px) lands on a 2x2 grid at the site's 930px content width, which
+// beats the 3+1 orphan row that a smaller minimum produces.
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin: 1.6rem 0 0.5rem;
+}
+
+.pillar {
+  padding: 1.25rem 1.3rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 12px;
+  background: var(--rm-surface);
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    border-color 0.18s ease;
+
+  h3 {
+    font-size: 1.06rem;
+    margin: 0.55rem 0 0.45rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--global-text-color-light);
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: var(--rm-surface-border);
+    box-shadow: var(--rm-shadow);
+  }
+}
+
+.pillar-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--global-theme-color) 14%, transparent);
+  color: var(--global-theme-color);
+  font-size: 0.95rem;
+}
+
+// -----------------------------------------------------------------------------
+// Call-to-action row
+// -----------------------------------------------------------------------------
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.8rem 0 0.5rem;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.5rem 1.05rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  background: var(--global-theme-color);
+  color: var(--global-hover-text-color) !important;
+  border: 1px solid var(--global-theme-color);
+  transition:
+    background 0.16s ease,
+    color 0.16s ease,
+    transform 0.16s ease;
+
+  &:hover {
+    background: var(--global-hover-color);
+    border-color: var(--global-hover-color);
+    text-decoration: none;
+    transform: translateY(-1px);
+  }
+}
+
+.cta-quiet {
+  background: transparent;
+  color: var(--global-theme-color) !important;
+  border-color: var(--rm-surface-border);
+
+  &:hover {
+    background: var(--rm-surface);
+    color: var(--global-theme-color) !important;
+    border-color: var(--global-theme-color);
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Cards (projects, repositories)
+// -----------------------------------------------------------------------------
+
+.card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: var(--global-card-bg-color);
+  box-shadow: none;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    border-color 0.18s ease;
+
+  .card-title {
+    font-size: 1.12rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .card-text {
+    font-size: 0.88rem;
+    line-height: 1.55;
+    color: var(--global-text-color-light);
+  }
+
+  img.card-img-top,
+  figure img.card-img-top {
+    border-radius: 0;
+  }
+
+  figure {
+    margin: 0;
+  }
+}
+
+.card.hoverable:hover {
+  transform: translateY(-3px);
+  border-color: var(--rm-surface-border);
+  box-shadow: var(--rm-shadow-lift);
+}
+
+// The theme floats category headings right in a washed-out grey; pull them back
+// to the left margin at readable contrast.
+.projects a .category,
+.projects .category {
+  float: none;
+  text-align: left;
+  font-size: 1.45rem;
+  color: var(--global-text-color);
+  opacity: 1;
+  text-transform: lowercase;
+  letter-spacing: 0.01em;
+  margin: 2.4rem 0 0.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+// -----------------------------------------------------------------------------
+// Publications
+// -----------------------------------------------------------------------------
+
+.publications {
+  ol.bibliography li {
+    margin-bottom: 1.5rem;
+  }
+
+  .title {
+    font-family: "Newsreader", Georgia, serif;
+    font-size: 1.12rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .periodical {
+    color: var(--global-text-color-light);
+  }
+
+  abbr.badge {
+    border-radius: 6px;
+    padding: 0.32rem 0.2rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.01em;
+
+    a {
+      color: inherit;
+    }
+  }
+
+  .links a.btn {
+    border-radius: 6px;
+    font-size: 0.74rem;
+    padding: 0.12rem 0.5rem;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// News
+// -----------------------------------------------------------------------------
+
+.news table td {
+  padding-bottom: 0.55rem;
+  line-height: 1.55;
+}
+
+.news .date {
+  color: var(--global-text-color-light);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+// -----------------------------------------------------------------------------
+// CV
+// -----------------------------------------------------------------------------
+
+.cv .card {
+  border-radius: 12px;
+}
+
+// -----------------------------------------------------------------------------
+// Responsive
+// -----------------------------------------------------------------------------
+
+@media (max-width: 576px) {
+  .post-header .post-title {
+    font-size: 2.1rem;
+  }
+
+  .pillars {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-row {
+    gap: 0.5rem;
+  }
+
+  .cta {
+    padding: 0.45rem 0.9rem;
+    font-size: 0.85rem;
+  }
+}
+
+// Respect users who ask for less motion.
+@media (prefers-reduced-motion: reduce) {
+  .pillar,
+  .card,
+  .cta {
+    transition: none;
+  }
+
+  .pillar:hover,
+  .card.hoverable:hover,
+  .cta:hover {
+    transform: none;
+  }
+}

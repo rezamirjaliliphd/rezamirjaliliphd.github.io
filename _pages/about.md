@@ -2,49 +2,114 @@
 layout: about
 title: about
 permalink: /
-subtitle: Ph.D. Candidate in <a href='https://www.ie.uh.edu/'>Industrial and Systems Engineering</a>, <a href='https://uh.edu/'> University of Houston</a>. <p> Designing elegant solutions to messy problems</p>
+subtitle: >
+  Ph.D. in <a href='https://www.ie.uh.edu/'>Industrial &amp; Systems Engineering</a>,
+  <a href='https://uh.edu/'>University of Houston</a>.
+  <p>Operations Research Scientist — designing elegant solutions to messy problems.</p>
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Engineering Building 1, 393A</p>
-    <p>4226 Martin Luther King Blvd</p>
-    <p>Houston, TX 77204</p>
+    <p>Houston, Texas</p>
+    <p>Open to research and industry roles</p>
+    <p><a href="/assets/pdf/resume.pdf">Download CV (PDF)</a></p>
 
-selected_papers: false # includes a list of papers marked as "selected={true}"
+selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  scrollable: false # adds a vertical scroll bar if there are more than 3 news items
+  limit: 4 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: false
   scrollable: false # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+
+I build algorithms that make large-scale logistics decisions tractable — and, increasingly,
+algorithms that learn how to make themselves faster.
+
+My doctoral work at the <a href='https://www.ie.uh.edu/research/centers-labs/socl'>Systems
+Optimization and Computing Laboratory</a>, under <a href='https://www.ie.uh.edu/faculty/lim'>Prof.
+Gino J. Lim</a>, produced exact methods for drone-assisted delivery: branch-and-price-and-cut
+frameworks whose pricing subproblems are solved by bidirectional labeling, and whose search is
+guided by reinforcement learning rather than by hand-tuned rules. The aim throughout is
+provable optimality on instances that were previously out of reach.
+
+<div class="hero-figure">
+  <video
+    class="hero-video"
+    src="{{ '/assets/video/mothership-drone-routing.mp4' | relative_url }}"
+    autoplay
+    loop
+    muted
+    playsinline
+    controls
+    preload="metadata"
+    title="Mothership and drone routing optimization, animated with Manim"
+  ></video>
+  <p class="hero-caption">
+    The problem in one minute — a truck-only tour against a coordinated mothership-and-drone
+    schedule, and the column-generation loop that finds it.
+  </p>
+</div>
+
 ---
 
-I am a Ph.D. candidate at the University of Houston working in <a href='https://www.ie.uh.edu/research/centers-labs/socl'> System Optimization and Computing Laboratroy (SOCL) </a> under supervison of <a href='https://www.ie.uh.edu/faculty/lim'> Prof. Gino J. Lim </a>, specializing in operations research, combinatorial optimization, and machine learning for logistics systems. My research focuses on developing exact and intelligent algorithms to solve large-scale network design and routing problems with a particular emphasis on drone-assisted delivery systems.
-I have experience designing branch-and-price-and-cut frameworks, integrating reinforcement learning with optimization, and accelerating shortest path subroutines under complex constraints. My work spans both theoretical modeling and computational implementations in Rust, C, C++, Python, and Cython.
+## what I work on
+
+<div class="pillars">
+  <div class="pillar">
+    <span class="pillar-icon"><i class="fa-solid fa-code-branch"></i></span>
+    <h3>Exact methods at scale</h3>
+    <p>
+      Branch-and-price-and-cut for path-based routing formulations. Column generation where
+      the pricing subproblem is an elementary shortest path problem with resource constraints,
+      solved by bidirectional label setting.
+    </p>
+  </div>
+  <div class="pillar">
+    <span class="pillar-icon"><i class="fa-solid fa-scissors"></i></span>
+    <h3>Cutting planes</h3>
+    <p>
+      Chvátal–Gomory, cover, conflict, and cycle-elimination inequalities — including a hybrid
+      family that closed 8% more of the optimality gap than any of its components alone.
+    </p>
+  </div>
+  <div class="pillar">
+    <span class="pillar-icon"><i class="fa-solid fa-brain"></i></span>
+    <h3>Learning inside the solver</h3>
+    <p>
+      Deep reinforcement learning for pricing, branching, and cut selection. Graph neural
+      networks that prioritize subproblems, cutting column-generation convergence time by
+      20–30%.
+    </p>
+  </div>
+  <div class="pillar">
+    <span class="pillar-icon"><i class="fa-solid fa-truck-fast"></i></span>
+    <h3>Logistics applications</h3>
+    <p>
+      Drone-assisted and multi-echelon delivery networks, healthcare scheduling, and
+      transportation network resilience under disruption.
+    </p>
+  </div>
+</div>
+
+<div class="cta-row">
+  <a class="cta" href="{{ '/projects/' | relative_url }}">Browse projects</a>
+  <a class="cta cta-quiet" href="{{ '/publications/' | relative_url }}">Publications</a>
+  <a class="cta cta-quiet" href="{{ '/cv/' | relative_url }}">Full CV</a>
+</div>
 
 ---
 
-### Research Interests
+### toolbox
 
-I work at the intersection of **optimization**, **algorithm design**, and **AI**, targeting scalable decision-making systems for logistics and transportation.
-My work focuses on combinatorial optimization, exact algorithms, and intelligent heuristics, with applications in both deterministic and stochastic logistics and transportation systems.
-I develop scalable, intelligent exact methods—such as branch-and-price-and-cut—employing DRL-assisted column and cut generation to solve complex routing and scheduling problems.
-My current research explores the integration of deep learning and mathematical optimization for multi-echelon vehicle routing and drone-assisted delivery networks.
-
-- **Vehicle Routing & Drone Coordination** in hybrid delivery networks
-- **Branch-and-Price-and-Cut (BPC)** for path-based routing problems
-- **Shortest Path with Resource Constraints (ESPPRC)** using bidirectional labeling through DRL-based label propagation
-- **Cutting Plane Generation**, e.g., Chvátal-Gomory and cycle-elimination cuts and hybrid cutting plane
-- **Reinforcement Learning for Optimization** (pricing, branching, cuts)
-- **AI-Guided Subproblem Prioritization** in column generation
-
----
+**Optimization** — Gurobi, CPLEX, SCIP, Pyomo, column generation, branch-and-price
+&nbsp;·&nbsp; **AI/ML** — PyTorch, TensorFlow, deep RL, graph neural networks, CUDA
+&nbsp;·&nbsp; **Languages** — Python, C, C++, Rust, Cython, MATLAB
+&nbsp;·&nbsp; **Parallelism** — OpenMP, MPI, CUDA, Cython `nogil`
