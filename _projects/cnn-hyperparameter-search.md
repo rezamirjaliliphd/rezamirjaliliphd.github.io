@@ -10,7 +10,7 @@ github: https://github.com/rezamirjaliliphd/cnn-optuna-cifar10
 
 Hyperparameter optimization for a convolutional network on CIFAR-10, using PyTorch and Optuna.
 
-The constraint that shaped this project was deliberate: the model is trained on a *reduced*
+The constraint that shaped this project was deliberate: the model is trained on a _reduced_
 dataset — 1,000 training images and 300 validation images — precisely so that the experiment
 measures how efficiently the search finds good configurations, not how well a CNN can fit all
 of CIFAR-10 given unlimited compute.

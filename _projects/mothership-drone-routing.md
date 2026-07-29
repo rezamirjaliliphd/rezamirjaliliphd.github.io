@@ -8,7 +8,7 @@ category: research
 related_publications: true
 ---
 
-A single ground vehicle — the *mothership* — carries a fleet of drones into a delivery
+A single ground vehicle — the _mothership_ — carries a fleet of drones into a delivery
 region, stops at a small number of launch points, and dispatches drones to serve the
 surrounding customers. The vehicle and the drones have to agree on where and when they
 meet, and the drones are constrained by flight endurance. Deciding the launch points, the

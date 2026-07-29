@@ -35,4 +35,4 @@ recovery forecasts. That makes it practical for officials and businesses to anti
 operations can resume after a storm.
 
 This work was done in the Transportation and Logistics Lab at SUNY Stony Brook and published
-in *Transportation Research Record* {% cite mirjalili2023resilience %}.
+in _Transportation Research Record_ {% cite mirjalili2023resilience %}.

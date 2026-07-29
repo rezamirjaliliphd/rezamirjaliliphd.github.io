@@ -79,7 +79,12 @@ html[data-theme="dark"] {
 // -----------------------------------------------------------------------------
 
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   line-height: 1.65;
 }
@@ -189,14 +194,22 @@ footer.sticky-bottom {
 // Hero video
 // -----------------------------------------------------------------------------
 
+// `clear: both` is load-bearing. The profile photo is floated right by the
+// theme, and without clearing, this block starts beside the still-open float —
+// browsers resolve a full-width replaced element in that position differently,
+// which renders the video off-centre. Clearing drops it below the float first.
 .hero-figure {
-  margin: 2.2rem 0 1.2rem;
+  clear: both;
+  margin: 2.2rem auto 1.2rem;
 }
 
 .hero-video {
   display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 14px;
   border: 1px solid var(--global-divider-color);
   box-shadow: var(--rm-shadow);

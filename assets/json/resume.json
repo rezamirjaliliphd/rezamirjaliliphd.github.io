@@ -163,39 +163,19 @@
       "name": "Optimization & Modeling",
       "level": "Expert",
       "icon": "fa-solid fa-sitemap",
-      "keywords": [
-        "Branch-and-Price-and-Cut",
-        "Column Generation",
-        "Gurobi",
-        "CPLEX",
-        "SCIP",
-        "Pyomo",
-        "Constraint Programming"
-      ]
+      "keywords": ["Branch-and-Price-and-Cut", "Column Generation", "Gurobi", "CPLEX", "SCIP", "Pyomo", "Constraint Programming"]
     },
     {
       "name": "Machine Learning",
       "level": "Advanced",
       "icon": "fa-solid fa-robot",
-      "keywords": [
-        "Deep Reinforcement Learning",
-        "PyTorch",
-        "Keras",
-        "TensorFlow",
-        "Graph Neural Networks"
-      ]
+      "keywords": ["Deep Reinforcement Learning", "PyTorch", "Keras", "TensorFlow", "Graph Neural Networks"]
     },
     {
       "name": "Programming",
       "level": "Advanced",
       "icon": "fa-solid fa-code",
-      "keywords": [
-        "Python",
-        "C++ (OpenMP/MPI)",
-        "Cython",
-        "MATLAB",
-        "Bash"
-      ]
+      "keywords": ["Python", "C++ (OpenMP/MPI)", "Cython", "MATLAB", "Bash"]
     }
   ],
   "languages": [
@@ -212,21 +192,12 @@
     {
       "name": "Optimization in Logistics",
       "icon": "fa-solid fa-truck",
-      "keywords": [
-        "Last-mile delivery",
-        "Drone routing",
-        "Vehicle routing problems",
-        "Supply chain design"
-      ]
+      "keywords": ["Last-mile delivery", "Drone routing", "Vehicle routing problems", "Supply chain design"]
     },
     {
       "name": "AI in Decision Making",
       "icon": "fa-solid fa-cogs",
-      "keywords": [
-        "RL-based heuristics",
-        "Neural combinatorial optimization",
-        "ML-assisted column generation"
-      ]
+      "keywords": ["RL-based heuristics", "Neural combinatorial optimization", "ML-assisted column generation"]
     }
   ],
   "projects": [

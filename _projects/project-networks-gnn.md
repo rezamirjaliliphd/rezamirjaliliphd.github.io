@@ -15,7 +15,7 @@ violate both constantly.
 
 ### Modelling projects as graphs
 
-We represent a project as a *heterogeneous* graph with two node types — activities and
+We represent a project as a _heterogeneous_ graph with two node types — activities and
 resources — and edges carrying precedence, assignment, and contention relationships. This
 lets the model see that two activities compete for the same crew even when there is no
 precedence arc between them, which is exactly the structure a critical-path calculation
