@@ -1,80 +1,88 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
 
-  <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
+<div class="home-page">
+  <section class="home-hero" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="hero-kicker">Operations research <span aria-hidden="true">&#183;</span> Artificial intelligence</p>
+      <h1 id="hero-title">Building Better Decisions<br>for Complex Systems</h1>
+    </div>
+
+    <div class="decision-world" aria-hidden="true">
+      <span class="world-halo world-halo-one"></span>
+      <span class="world-halo world-halo-two"></span>
+      <span class="world-line line-one"></span>
+      <span class="world-line line-two"></span>
+      <span class="world-line line-three"></span>
+      <span class="world-line line-four"></span>
+      <span class="world-node node-one"><i class="fa-solid fa-location-dot"></i></span>
+      <span class="world-node node-two"><i class="fa-solid fa-truck-fast"></i></span>
+      <span class="world-node node-three"><i class="fa-solid fa-diagram-project"></i></span>
+      <span class="world-node node-four"><i class="fa-solid fa-brain"></i></span>
+      <span class="world-node node-five"><i class="fa-solid fa-route"></i></span>
+      <span class="world-node node-six"><i class="fa-solid fa-cube"></i></span>
+      <span class="world-core"><span>OR</span><small>+</small><span>AI</span></span>
+    </div>
+
+    <div class="hero-statement">
+      <div class="hero-statement-copy">
+        <p class="dropcap">
+          I design exact and learning-augmented algorithms for routing, logistics, and other
+          large-scale decision problems.
+        </p>
+        <p>
+          My work combines mathematical guarantees with modern machine learning to make
+          difficult systems faster, clearer, and more useful in the real world.
+        </p>
       </div>
-    {% endif %}
+      <div class="hero-statement-meta">
+        <span class="availability"><i aria-hidden="true"></i> Houston, Texas</span>
+        <a href="{{ '/projects/' | relative_url }}">Explore the work <span aria-hidden="true">&#8599;</span></a>
+      </div>
+    </div>
 
-    <div class="clearfix">{{ content }}</div>
+    <a class="scroll-cue" href="#profile" aria-label="Continue to profile">
+      <span>Scroll to explore</span>
+      <i aria-hidden="true"></i>
+    </a>
+  </section>
 
-    <!-- News -->
+  <article id="profile" class="home-content">
+    {{ content }}
+
     {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
+      <section class="home-index-section home-news">
+        <div class="section-heading">
+          <p>01 / Updates</p>
+          <h2>Recent news</h2>
+          <a href="{{ '/news/' | relative_url }}">View all <span aria-hidden="true">&#8599;</span></a>
+        </div>
+        {% include news.liquid limit=true %}
+      </section>
     {% endif %}
 
-    <!-- Latest posts -->
-    {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
-
-    <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
+      <section class="home-index-section home-publications">
+        <div class="section-heading">
+          <p>02 / Research</p>
+          <h2>Selected publications</h2>
+          <a href="{{ '/publications/' | relative_url }}">View all <span aria-hidden="true">&#8599;</span></a>
+        </div>
+        {% include selected_papers.liquid %}
+      </section>
     {% endif %}
 
-    <!-- Social -->
     {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
-    {% endif %}
-
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
+      <section class="home-contact" aria-labelledby="contact-heading">
+        <p>03 / Connect</p>
+        <h2 id="contact-heading">Have a difficult decision problem?</h2>
+        <a class="contact-link" href="mailto:{{ site.data.socials.email }}">Let&rsquo;s talk <span aria-hidden="true">&#8599;</span></a>
+        <div class="contact-footer">
+          <div class="contact-icons">{% include social.liquid %}</div>
+          <div class="contact-note">{{ site.contact_note }}</div>
+        </div>
+      </section>
     {% endif %}
   </article>
 </div>
