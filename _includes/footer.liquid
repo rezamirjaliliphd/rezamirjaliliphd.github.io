@@ -1,6 +1,8 @@
 {% capture footer_contents %}
-  <span>&copy; {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.last_name }}</span>
-  <span>Optimization <i aria-hidden="true">&#183;</i> Learning <i aria-hidden="true">&#183;</i> Logistics</span>
+  &copy; Copyright {{ site.time | date: '%Y' }}
+  {{ site.first_name }}
+  {{ site.middle_name }}
+  {{ site.last_name }}. {{ site.footer_text }}
   {% if site.impressum_path %}
     <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
   {% endif %}
