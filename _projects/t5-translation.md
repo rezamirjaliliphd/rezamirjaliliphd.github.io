@@ -4,7 +4,7 @@ title: English-to-French translation with T5
 description: Fine-tuning T5-small on OPUS Books with mixed-precision training.
 img: assets/img/projects/t5-translation.svg
 importance: 8
-category: applied ml
+category: Applied ML
 github: https://github.com/rezamirjaliliphd/t5-translation-opus
 ---
 

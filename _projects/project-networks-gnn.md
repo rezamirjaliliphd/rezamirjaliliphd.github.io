@@ -4,7 +4,7 @@ title: project networks with graph neural networks
 description: Predicting project duration and cost from activity–resource graphs, beyond CPM and PERT.
 img: assets/img/projects/project-gnn.svg
 importance: 5
-category: research
+category: Research
 related_publications: true
 ---
 

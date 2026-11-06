@@ -4,7 +4,7 @@ title: learning cutting planes
 description: Deep Q-learning for generating Chvátal–Gomory cuts, plus a hybrid inequality family.
 img: assets/img/projects/cutting-planes.svg
 importance: 3
-category: research
+category: Research
 ---
 
 A Chvátal–Gomory cut is determined by a vector of multipliers applied to the constraint

@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /repositories/
-title: code
+title: Code
 description: Open-source work I can share publicly — applied machine learning, reinforcement learning, and this site. Research code from my dissertation is kept private.
 nav: true
 nav_order: 4

@@ -4,7 +4,7 @@ title: network resilience after snow storms
 description: Measuring and forecasting how New York City's transportation network recovers from winter storms.
 img: assets/img/projects/network-resilience.svg
 importance: 4
-category: research
+category: Research
 related_publications: true
 ---
 

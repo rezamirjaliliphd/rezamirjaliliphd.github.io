@@ -4,7 +4,7 @@ title: stock price forecasting with LSTM
 description: An LSTM trained on eight years of AAPL data, judged on direction rather than on loss.
 img: assets/img/projects/lstm-forecasting.svg
 importance: 6
-category: applied ml
+category: Applied ML
 github: https://github.com/rezamirjaliliphd/lstm-stock-prediction
 ---
 

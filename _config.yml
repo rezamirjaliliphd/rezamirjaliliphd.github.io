@@ -12,8 +12,7 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Operations Research Scientist working at the intersection of large-scale optimization and machine learning —
   branch-and-price-and-cut, column generation, and deep reinforcement learning for routing and logistics.
 footer_text: >
-  Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and the <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Built with <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
 keywords: operations research, combinatorial optimization, branch-and-price-and-cut, column generation, ESPPRC, vehicle routing, drone delivery, reinforcement learning, graph neural networks, Reza Mirjalili
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ◆ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -49,7 +48,7 @@ rss_icon: true
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: true
 socials_in_search: true
 posts_in_search: true

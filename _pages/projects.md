@@ -1,11 +1,11 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
 description: Research on exact and learning-augmented optimization, alongside applied machine learning work.
 nav: true
 nav_order: 3
-display_categories: [research, applied ml]
+display_categories: [Research, Applied ML]
 horizontal: false
 ---
 

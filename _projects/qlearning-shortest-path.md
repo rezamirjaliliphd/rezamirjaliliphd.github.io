@@ -4,7 +4,7 @@ title: Q-learning for shortest paths
 description: Reinforcement learning on a constrained grid graph, as a bridge between RL and combinatorial optimization.
 img: assets/img/projects/qlearning-path.svg
 importance: 9
-category: applied ml
+category: Applied ML
 github: https://github.com/rezamirjaliliphd/Q_learning_shortest_path
 ---
 

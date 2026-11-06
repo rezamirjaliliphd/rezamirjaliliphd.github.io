@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: >
   Ph.D. in <a href='https://www.ie.uh.edu/'>Industrial &amp; Systems Engineering</a>,
@@ -50,6 +50,7 @@ provable optimality on instances that were previously out of reach.
     playsinline
     controls
     preload="metadata"
+    poster="{{ '/assets/img/hero-poster.jpg' | relative_url }}"
     title="Mothership and drone routing optimization, animated with Manim"
   ></video>
   <p class="hero-caption">
@@ -58,9 +59,7 @@ provable optimality on instances that were previously out of reach.
   </p>
 </div>
 
----
-
-## what I work on
+## Research
 
 <div class="pillars">
   <div class="pillar">
@@ -105,11 +104,11 @@ provable optimality on instances that were previously out of reach.
   <a class="cta cta-quiet" href="{{ '/cv/' | relative_url }}">Full CV</a>
 </div>
 
----
+## Toolbox
 
-### toolbox
-
-**Optimization** — Gurobi, CPLEX, SCIP, Pyomo, column generation, branch-and-price
-&nbsp;·&nbsp; **AI/ML** — PyTorch, TensorFlow, deep RL, graph neural networks, CUDA
-&nbsp;·&nbsp; **Languages** — Python, C, C++, Rust, Cython, MATLAB
-&nbsp;·&nbsp; **Parallelism** — OpenMP, MPI, CUDA, Cython `nogil`
+<dl class="toolbox">
+  <div><dt>Optimization</dt><dd>Gurobi, CPLEX, SCIP, Pyomo, column generation, branch-and-price</dd></div>
+  <div><dt>AI / ML</dt><dd>PyTorch, TensorFlow, deep reinforcement learning, graph neural networks</dd></div>
+  <div><dt>Languages</dt><dd>Python, C, C++, Rust, Cython, MATLAB</dd></div>
+  <div><dt>Parallelism</dt><dd>OpenMP, MPI, CUDA, Cython <code>nogil</code></dd></div>
+</dl>

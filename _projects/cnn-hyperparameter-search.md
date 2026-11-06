@@ -4,7 +4,7 @@ title: CNN hyperparameter search on CIFAR-10
 description: Optuna-driven tuning of a convolutional network, optimising for search efficiency rather than raw accuracy.
 img: assets/img/projects/cnn-optuna.svg
 importance: 7
-category: applied ml
+category: Applied ML
 github: https://github.com/rezamirjaliliphd/cnn-optuna-cifar10
 ---
 

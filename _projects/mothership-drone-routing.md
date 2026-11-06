@@ -4,7 +4,7 @@ title: mothership & drone routing
 description: An exact branch-and-price-and-cut algorithm for coordinating a support vehicle with a fleet of delivery drones.
 img: assets/img/projects/mothership-routing.svg
 importance: 1
-category: research
+category: Research
 related_publications: true
 ---
 

@@ -4,7 +4,7 @@ title: learning to price
 description: Deep reinforcement learning for prioritizing pricing subproblems inside column generation.
 img: assets/img/projects/drl-pricing.svg
 importance: 2
-category: research
+category: Research
 ---
 
 Column generation spends most of its time in the pricing subproblem. When there are many
