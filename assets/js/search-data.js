@@ -4,34 +4,34 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
   },{id: "nav-publications",
-          title: "publications",
+          title: "Publications",
           description: "Peer-reviewed articles, preprints, and work in progress, in reverse chronological order. Also on Google Scholar and ORCID.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
         },{id: "nav-projects",
-          title: "projects",
+          title: "Projects",
           description: "Research on exact and learning-augmented optimization, alongside applied machine learning work.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
         },{id: "nav-code",
-          title: "code",
+          title: "Code",
           description: "Open-source work I can share publicly — applied machine learning, reinforcement learning, and this site. Research code from my dissertation is kept private.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
           },
         },{id: "nav-cv",
-          title: "cv",
+          title: "CV",
           description: "Education, research experience, publications, and technical skills. The PDF version is linked from the icon on the right.",
           section: "Navigation",
           handler: () => {
