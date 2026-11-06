@@ -24,8 +24,9 @@ below is the subject of {% cite mirjalili2026mothership %}.
   </div>
 </div>
 <div class="caption">
-  A truck-only tour compared against a coordinated mothership-and-drone schedule over the same
-  twelve delivery points, followed by the column-generation loop that finds the schedule.
+  The optimal mothership-and-drone schedule for a 50-customer instance (25 stations, three
+  drones), proven optimal by branch-price-and-cut. The truck drives the station network while
+  each drone is launched at a station, serves its customers, and lands back on the truck.
 </div>
 
 ### Approach

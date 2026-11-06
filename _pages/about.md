@@ -53,8 +53,8 @@ provable optimality on instances that were previously out of reach.
     title="Mothership and drone routing optimization, animated with Manim"
   ></video>
   <p class="hero-caption">
-    The problem in one minute — a truck-only tour against a coordinated mothership-and-drone
-    schedule, and the column-generation loop that finds it.
+    The problem in one minute — the proven-optimal plan for a 50-customer instance: one truck
+    driving the station network while three drones launch, deliver and land back on it.
   </p>
 </div>
 
