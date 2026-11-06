@@ -1,35 +1,53 @@
-<div class="list-groups">
-  {% assign certificates = data[1] | sort: 'date' | reverse %}
-  {% for content in certificates %}
-    <div class="list-group col-md-6">
-      <table class="table-cv list-group-table">
-        <tbody>
-          <tr>
-            {% if content.icon %}
-              <td class="list-group-category-icon">
-                <i class="{{ content.icon }}"></i>
-              </td>
+{% assign certificates = data[1] | sort: 'date' | reverse %}
+{% assign specializations = certificates | where: 'type', 'Specialization' %}
+{% assign courses = certificates | where_exp: 'c', "c.type != 'Specialization'" %}
+<div class="cert-groups">
+  {% if specializations.size > 0 %}
+    <p class="cert-group-label">Specializations</p>
+    <ul class="cert-list">
+      {% for content in specializations %}
+        <li class="cert">
+          <div class="cert-head">
+            {% if content.url != '' %}
+              <a class="cert-name" href="{{ content.url }}" target="_blank" rel="noopener">{{ content.name }}</a>
             {% else %}
-              <td class="list-group-category-icon"></td>
+              <span class="cert-name">{{ content.name }}</span>
             {% endif %}
-            <!-- Calculate colspan number for category title -->
-            {% assign i = 1 %}
-            {% for item in content.items %}
-              {% assign i = i | plus: 1 %}
-            {% endfor %}
-            <td colspan="{{ i }}" class="list-group-category">
-              <a href="{{ content.url | default: # }}">{{ content.name }}</a>
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td class="list-group-name">
-              <b>{{ content.issuer }}</b>
-            </td>
-            <td class="list-group-name">{{ content.date }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  {% endfor %}
+            <span class="cert-date">{{ content.date | date: '%b %Y' }}</span>
+          </div>
+          <div class="cert-issuer">
+            {{ content.issuer }}
+            {% if content.courses %}&middot; {{ content.courses.size }} courses{% endif %}
+          </div>
+          {% if content.courses %}
+            <ul class="cert-courses">
+              {% for course in content.courses %}
+                <li>
+                  <a href="{{ course.url }}" target="_blank" rel="noopener">{{ course.name }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  {% if courses.size > 0 %}
+    <p class="cert-group-label">Courses</p>
+    <ul class="cert-list">
+      {% for content in courses %}
+        <li class="cert">
+          <div class="cert-head">
+            {% if content.url != '' %}
+              <a class="cert-name" href="{{ content.url }}" target="_blank" rel="noopener">{{ content.name }}</a>
+            {% else %}
+              <span class="cert-name">{{ content.name }}</span>
+            {% endif %}
+            <span class="cert-date">{{ content.date | date: '%b %Y' }}</span>
+          </div>
+          <div class="cert-issuer">{{ content.issuer }}</div>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
 </div>

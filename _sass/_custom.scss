@@ -613,6 +613,94 @@ footer.sticky-bottom {
 }
 
 // -----------------------------------------------------------------------------
+// CV certificates — a plain list, grouped, linked to verification pages.
+// -----------------------------------------------------------------------------
+
+.cert-groups {
+  padding: 0.25rem 0;
+}
+
+.cert-group-label {
+  margin: var(--rm-space-3) 0 0.25rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--rm-muted);
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.cert-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--rm-space-2);
+  border-top: 1px solid var(--rm-border);
+}
+
+.cert {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--rm-border);
+}
+
+.cert-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--rm-space-2);
+}
+
+.cert-name {
+  font-weight: 500;
+  color: var(--rm-ink);
+}
+
+a.cert-name:hover {
+  color: var(--rm-accent);
+}
+
+.cert-date {
+  flex-shrink: 0;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.8rem;
+  color: var(--rm-muted);
+}
+
+.cert-issuer {
+  font-size: var(--rm-text-sm);
+  color: var(--rm-muted);
+}
+
+.cert-courses {
+  list-style: none;
+  padding: 0;
+  margin: 0.4rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.4rem;
+
+  a {
+    display: inline-block;
+    padding: 0.1rem 0.5rem;
+    font-size: 0.78rem;
+    color: var(--rm-ink-dim);
+    border: 1px solid var(--rm-border-strong);
+    border-radius: var(--rm-radius);
+    transition:
+      color var(--rm-dur) var(--rm-ease),
+      border-color var(--rm-dur) var(--rm-ease);
+
+    &:hover {
+      color: var(--rm-accent);
+      border-color: var(--rm-accent-dim);
+      text-decoration: none;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
 // Project cards — image, title and blurb; no box.
 // -----------------------------------------------------------------------------
 

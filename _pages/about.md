@@ -111,4 +111,5 @@ provable optimality on instances that were previously out of reach.
   <div><dt>AI / ML</dt><dd>PyTorch, TensorFlow, deep reinforcement learning, graph neural networks</dd></div>
   <div><dt>Languages</dt><dd>Python, C, C++, Rust, Cython, MATLAB</dd></div>
   <div><dt>Parallelism</dt><dd>OpenMP, MPI, CUDA, Cython <code>nogil</code></dd></div>
+  <div><dt>Certifications</dt><dd>Duke specializations in MLOps, LLMOps and data engineering; Stanford, DeepLearning.AI, Google and NVIDIA courses — <a href="{{ '/cv/#certificates' | relative_url }}">see all</a></dd></div>
 </dl>

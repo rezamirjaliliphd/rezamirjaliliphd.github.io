@@ -100,32 +100,206 @@
   "awards": [],
   "certificates": [
     {
-      "name": "MLOps Specialization",
-      "date": "2025-01-01",
-      "issuer": "Duke University / Coursera",
-      "url": "",
-      "icon": "fa-solid fa-gears"
+      "name": "Large Language Model Operations (LLMOps)",
+      "date": "2025-04-01",
+      "issuer": "Duke University · Coursera",
+      "type": "Specialization",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/SJRZPMDWVW1Y",
+      "courses": [
+        {
+          "name": "Introduction to Generative AI",
+          "url": "https://www.coursera.org/account/accomplishments/verify/TZNWH1FT4R3U"
+        },
+        {
+          "name": "Operationalizing LLMs on Azure",
+          "url": "https://www.coursera.org/account/accomplishments/verify/IC9GD11XKNAA"
+        },
+        {
+          "name": "Advanced Data Engineering",
+          "url": "https://www.coursera.org/account/accomplishments/verify/Z0D5OZIDK5VJ"
+        },
+        {
+          "name": "GenAI and LLMs on AWS",
+          "url": "https://www.coursera.org/account/accomplishments/verify/AEKUWUE184RF"
+        },
+        {
+          "name": "Databricks to Local LLMs",
+          "url": "https://www.coursera.org/account/accomplishments/verify/WOMI2VAMSL1Z"
+        },
+        {
+          "name": "Open Source LLMOps Solutions",
+          "url": "https://www.coursera.org/account/accomplishments/verify/ZY9TATBEH1XX"
+        }
+      ]
     },
     {
-      "name": "LLMOps Specialization",
-      "date": "2025-01-01",
-      "issuer": "Duke University / Coursera",
-      "url": "",
-      "icon": "fa-solid fa-robot"
+      "name": "Applied Python Data Engineering",
+      "date": "2025-04-01",
+      "issuer": "Duke University · Coursera",
+      "type": "Specialization",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/KWGZ4R07O6VX",
+      "courses": [
+        {
+          "name": "Spark, Hadoop, and Snowflake for Data Engineering",
+          "url": "https://www.coursera.org/account/accomplishments/verify/NRD33ZX71E7F"
+        },
+        {
+          "name": "Virtualization, Docker, and Kubernetes for Data Engineering",
+          "url": "https://www.coursera.org/account/accomplishments/verify/008RGB1C3197"
+        },
+        {
+          "name": "Data Visualization with Python",
+          "url": "https://www.coursera.org/account/accomplishments/verify/A6FYM68UNJED"
+        }
+      ]
+    },
+    {
+      "name": "Python, Bash and SQL Essentials for Data Engineering",
+      "date": "2025-04-01",
+      "issuer": "Duke University · Coursera",
+      "type": "Specialization",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/TSHZN1L0CRAZ",
+      "courses": [
+        {
+          "name": "Python and Pandas for Data Engineering",
+          "url": "https://www.coursera.org/account/accomplishments/verify/6EE3H4CXJ54N"
+        },
+        {
+          "name": "Linux and Bash for Data Engineering",
+          "url": "https://www.coursera.org/account/accomplishments/verify/ZFVQY0I5RI4N"
+        },
+        {
+          "name": "Scripting with Python and SQL for Data Engineering",
+          "url": "https://www.coursera.org/account/accomplishments/verify/6AV0FVUGXXH0"
+        },
+        {
+          "name": "Web Applications and Command-Line Tools for Data Engineering",
+          "url": "https://www.coursera.org/account/accomplishments/verify/Y6ZPAY7CPQIO"
+        }
+      ]
+    },
+    {
+      "name": "MLOps | Machine Learning Operations",
+      "date": "2025-03-01",
+      "issuer": "Duke University · Coursera",
+      "type": "Specialization",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/4YQCI8PGJFQI",
+      "courses": [
+        {
+          "name": "Python Essentials for MLOps",
+          "url": "https://www.coursera.org/account/accomplishments/verify/DZGAZQRBNR7Z"
+        },
+        {
+          "name": "DevOps, DataOps, MLOps",
+          "url": "https://www.coursera.org/account/accomplishments/verify/WLVP4Y2ZQJR6"
+        },
+        {
+          "name": "MLOps Platforms: Amazon SageMaker and Azure ML",
+          "url": "https://www.coursera.org/account/accomplishments/verify/V4LLIWUHRGMX"
+        },
+        {
+          "name": "MLOps Tools: MLflow and Hugging Face",
+          "url": "https://www.coursera.org/account/accomplishments/verify/8PXDVFO970L7"
+        }
+      ]
+    },
+    {
+      "name": "Foundations of Data Science",
+      "date": "2026-09-01",
+      "issuer": "Google · Coursera",
+      "type": "Course",
+      "url": "https://www.coursera.org/account/accomplishments/verify/I07DPYHBXHGJ"
+    },
+    {
+      "name": "Divide and Conquer, Sorting and Searching, and Randomized Algorithms",
+      "date": "2026-09-01",
+      "issuer": "Stanford Online · Coursera",
+      "type": "Course",
+      "url": "https://www.coursera.org/account/accomplishments/verify/O0IXD8ZSA0JS"
+    },
+    {
+      "name": "Regression and Classification",
+      "date": "2025-04-01",
+      "issuer": "University of Colorado Boulder · Coursera",
+      "type": "Course",
+      "url": "https://www.coursera.org/account/accomplishments/verify/B2TTJ7EC08J4"
+    },
+    {
+      "name": "Introduction to Probability and Data with R",
+      "date": "2024-12-01",
+      "issuer": "Duke University · Coursera",
+      "type": "Course",
+      "url": "https://www.coursera.org/account/accomplishments/verify/RPJQS8L0UQDL"
+    },
+    {
+      "name": "Fundamentals of Reinforcement Learning",
+      "date": "2024-11-01",
+      "issuer": "University of Alberta · Coursera",
+      "type": "Course",
+      "url": "https://www.coursera.org/account/accomplishments/verify/9PBCBJ5MTS3W"
+    },
+    {
+      "name": "C for Everyone, Part 2: Structured Programming",
+      "date": "2024-10-01",
+      "issuer": "UC Santa Cruz · Coursera",
+      "type": "Course",
+      "url": "https://www.coursera.org/account/accomplishments/verify/6WZANHB934BS"
+    },
+    {
+      "name": "C for Everyone, Part 1: Programming Fundamentals",
+      "date": "2024-08-01",
+      "issuer": "UC Santa Cruz · Coursera",
+      "type": "Course",
+      "url": "https://www.coursera.org/account/accomplishments/verify/AKYKM55FEF1U"
+    },
+    {
+      "name": "Neural Networks and Deep Learning",
+      "date": "2023-02-01",
+      "issuer": "DeepLearning.AI · Coursera",
+      "type": "Course",
+      "url": "https://www.coursera.org/account/accomplishments/verify/2HEPSFDKHNEY"
+    },
+    {
+      "name": "Python for Data Science & AI: Hands-On Development",
+      "date": "2019-09-01",
+      "issuer": "IBM · Coursera",
+      "type": "Course",
+      "url": "https://www.coursera.org/account/accomplishments/verify/CUUEH9JMDXPE"
+    },
+    {
+      "name": "Data Science Methodology",
+      "date": "2019-09-01",
+      "issuer": "IBM · Coursera",
+      "type": "Course",
+      "url": "https://www.coursera.org/account/accomplishments/verify/D9S83H39TGQU"
+    },
+    {
+      "name": "Essential Tools for Data Scientists: Git, Jupyter & More",
+      "date": "2019-08-01",
+      "issuer": "IBM · Coursera",
+      "type": "Course",
+      "url": "https://www.coursera.org/account/accomplishments/verify/GVGH6ADQ5XG8"
+    },
+    {
+      "name": "Data Science Foundations: Tools, Careers & Real-World Applications",
+      "date": "2019-08-01",
+      "issuer": "IBM · Coursera",
+      "type": "Course",
+      "url": "https://www.coursera.org/account/accomplishments/verify/DH9VDJDZ5DY8"
     },
     {
       "name": "Fundamentals of Deep Learning",
       "date": "2024-05-01",
-      "issuer": "NVIDIA",
-      "url": "",
-      "icon": "fa-solid fa-brain"
+      "issuer": "NVIDIA Deep Learning Institute",
+      "type": "Course",
+      "url": ""
     },
     {
       "name": "CUDA C++ Programming",
       "date": "2024-05-01",
-      "issuer": "NVIDIA",
-      "url": "",
-      "icon": "fa-solid fa-microchip"
+      "issuer": "NVIDIA Deep Learning Institute",
+      "type": "Course",
+      "url": ""
     }
   ],
   "publications": [
